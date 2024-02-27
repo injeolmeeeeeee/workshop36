@@ -1,0 +1,39 @@
+<h2>Upload Post</h2>
+<table>
+    <tr>
+        <td>
+            <div>
+                <form (ngSubmit)="uploadPost()" enctype="multipart/form-data">
+                    <div>
+    <tr>
+        <td>
+            <label for="comments">Comments:</label>
+        </td>
+        <td>
+            <textarea id="comments" name="comments" [(ngModel)]="comments"></textarea>
+        </td>
+    </tr>
+    </div>
+    <div>
+        <tr>
+            <td>
+                <label for="picture">Picture:</label>
+            </td>
+            <td>
+                <input type="file" id="picture" name="picture" (change)="onFileSelected($event)" accept="image/*">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <td>
+                <button type="submit">Upload</button>
+            </td>
+        </tr>
+
+    </div>
+
+    </form>
+    </div>
+    </td>
+    </tr>
+</table>
